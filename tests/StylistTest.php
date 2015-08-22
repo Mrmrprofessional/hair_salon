@@ -8,10 +8,10 @@
     require_once "src/Stylist.php";
     require_once "src/Client.php";
 
-    $server = 'mysql:host=localhost;dbclient=hair_dresser_test';
-    $userclient = 'root';
-    $password = 'root';
-    $DB = new PDO($server, $userclient, $password);
+    $server = 'mysql:host=127.0.0.1;dbname=hair_dresser_test';
+    $username = 'root';
+
+    $DB = new PDO($server, $username);
 
     class StylistTest extends PHPUnit_Framework_TestCase {
 
@@ -182,4 +182,4 @@
 
     }
 
- ?>
+?>
